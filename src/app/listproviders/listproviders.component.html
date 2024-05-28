@@ -1,0 +1,27 @@
+<h3 align="center" >Liste des providers</h3>
+<hr>
+
+
+<hr>
+<table align="center" border="1" class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>address</th>
+        <th>email</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let providers of listprovider">
+        <td>{{providers.id}}</td>
+        <td>{{providers.name}}</td>
+        <td>{{providers.address}}</td>
+        <td>{{providers.email}}</td>
+       <!-- <td> <button type="button" (click)="deleteprovider(providers)">Supprimer</button>
+          <button type="button" (click)="updateProviders(providers)">Modifier</button>  </td>-->
+      </tr>
+    </tbody>
+  </table>
+
